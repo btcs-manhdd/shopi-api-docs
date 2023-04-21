@@ -45,11 +45,11 @@
         // Build a system
         const ui = SwaggerUIBundle({
           dom_id: "#swagger-ui",
-          url: "https://btcs-manhdd.github.io/shopi-api-docs/docs/api-docs.json",
+          url: "https://shop-api-production-40e7.up.railway.app/docs/api-docs.json",
           operationsSorter: null,
           configUrl: null,
           validatorUrl: null,
-          oauth2RedirectUrl: "http://127.0.0.1:5500/api/oauth2-callback",
+          oauth2RedirectUrl: "https://shop-api-production-40e7.up.railway.app/api/oauth2-callback",
           requestInterceptor: function (request) {
             request.headers["X-CSRF-TOKEN"] = "";
             return request;
