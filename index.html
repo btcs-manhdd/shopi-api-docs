@@ -52,6 +52,7 @@
           oauth2RedirectUrl: "https://shop-api-production-40e7.up.railway.app/api/oauth2-callback",
           requestInterceptor: function (request) {
             request.headers["X-CSRF-TOKEN"] = "";
+            request.headers["Access-Control-Allow"] = "*";
             return request;
           },
 
